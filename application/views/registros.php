@@ -1,26 +1,36 @@
 <div class="page-heading">
-    <h3 class="page-title"><strong>12. Registros</strong></h3>
+    <h3 class="page-title"><strong>13. Cancelación</strong></h3>
 </div>
 <div class="page-content fade-in-up">
     <div class="row">
         <div class="col-xl-12">
             <div class="ibox" style="border: 3px solid black;">
                 <div class="row">
-                    	<div class="col-md-1"  alingn="center">
-                    		<img src="<?=base_url()?>assets/img/senales/stop.png" alt="">
-                    	</div>
-                    	<div class="col-md-5">
-                    		<h5>INTERRUMPIR</h5>
-                    		<p style="font-size: 11px;">Despues de 45 segundos para cada ítem.</p>
-                    	</div>
-                    	<div class="col-md-1" >
-                    		<img src="<?=base_url()?>assets/img/senales/esc.png" alt="">
-                    	</div>
-                    	<div class="col-md-5">
-                    		<h5>PUNTUAR</h5>
-                    		<p style="font-size: 11px;">Utilice la plantilla de calificación para calificar las respeuestas del <br>niño. Reste el número de respuestas incorrectas al número de <br>respuestas correctas. Si la puntuación total es menor que cero, <br>puntúe entonces 0 puntos. <br> RA y RE: Puntaje total para los ítems 1 y 2, respectivamente.</p>
-                	</div>
-                </div>
+                        <div class="col-md-1" align="center">
+                            <img src="<?=base_url()?>assets/img/senales/der.png" alt="">
+                        </div>
+                        <div class="col-md-3">
+                            <h5>COMIENZO</h5>
+                            <p style="font-size: 11px;"><strong>Edad 6-7: </strong> <br>Ítem de ejemplo.<br> e ítem 1.<br>
+                                                        <strong>Edad 8-16: </strong> <br>Ítem de ejemplo <br>e ítem 5.<br>
+                                                        <strong>Edad 12-16: </strong> <br>Ítem de ejemplo <br>e ítem 8.</p>
+                        </div>
+                        <div class="col-md-1"  alingn="center">
+                            <img src="<?=base_url()?>assets/img/senales/stop.png" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <h5>TERMINACION</h5>
+                            <p style="font-size: 11px;">Después de 3 <br>puntuaciones <br>de 0 consecutivas</p>
+                        </div>
+                        <div class="col-md-1"> 
+                            <img src="<?=base_url()?>assets/img/senales/esc.png" alt="">
+                        </div>
+                        <div class="col-md-4">
+                            <h5>PUNTUACION</h5>
+                            <p style="font-size: 11px;"><strong>0, 1 o 2 </strong>puntos.<br>
+                             Véase el Manual de aplicacion y recorrección para los ejemplos de respuesta<br></p>
+                        </div>
+                    </div>
             </div>
         </div>
     </div>
@@ -28,59 +38,80 @@
         <div class="col-xl-12">
             <div class="ibox">
                 <div class="row">
-                    <div class="col-md-12"> 
+                    <div class="col-md-4">
                         <table style="width: 100%">
-                            <tr class="negrita" align="center">
-                                <td>Ítem</td>
-                                <td>Tiempo límite</td>
-                                <td>Tiempo de ejecución</td>
-                                <td>Respuestas corectas</td>
-                                <td>Respuestas incorrectas</td>
-                                <td>Diferencia</td>
-                                <td>Puntos de <br>bonificación </td>
-                                <td>Puntaje total</td>
+                            <tr align="center" class="negrita">
+                                <td style="background-color: black; color:white;">Ítem</td>
+                                <td style="background-color: black; color:white;">Tiempo <br>empleado </td>
+                                <td style="background-color: black; color:white;">Tiempo <br>empleado </td>
                             </tr>
                             <tr>
-                                <td align="center" rowspan="2">1.Aleatorio</td>
-                                <td align="center" rowspan="2">45"</td>
-                                <td rowspan="2" align="center">
-                                    <div id="contenedor">
-                                        <div align="center" class="reloj" id="Horas1">00</div>
-                                        <input type="button" class="boton" id="inicio1" value="Start &#9658;" onclick="inicio('inicio1','parar1','Horas1');">
-                                        <input type="button" class="boton" id="parar1" value="Stop &#8718;" onclick="parar('inicio1','parar1');" disabled>
-                                    </div>
+                                <td class="noborderder noborderiz">1. Aaleatoria</td>
+                                <td class="noborderder noborderiz" align="center">45"</td>
+                                <td class="noborderder noborderiz " align="center">
+                                    <input style="border: 2px solid black; width: 50px; height: 30px;" type="text" name="puntaje_total">
                                 </td>
-                                <td rowspan="2"></td>
-                                <td rowspan="2"></td>
-                                <td rowspan="2"></td>
-                                <td style="height: 10px; font-size: 10px;" align="center">Máximo=4</td>
-                                <td style="height: 10px; font-size: 10px;" align="center">RegA Maximo=68</td>
                             </tr>
                             <tr>
-                                <td style="height: 30px;"></td>
-                                <td style="height: 30px;"></td>
-                            </tr>
-                            <tr>
-                                <td align="center" rowspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.Estructurado</td>
-                                <td align="center" rowspan="2">45"</td>
-                                <td rowspan="2" align="center">
-                                    <div id="contenedor">
-                                        <div align="center" class="reloj" id="Horas2">00</div>
-                                        <input type="button" class="boton" id="inicio2" value="Start &#9658;" onclick="inicio('inicio2','parar2','Horas2');">
-                                        <input type="button" class="boton" id="parar2" value="Stop &#8718;" onclick="parar('inicio2','parar2');" disabled>
-                                    </div>
+                                <td class="noborderder noborderiz">2. Estructurada</td>
+                                <td class="noborderder noborderiz" align="center">45"</td>
+                                <td class="noborderder noborderiz" align="center">
+                                    <input style="border: 2px solid black; width: 50px; height: 30px;" type="text" name="puntaje_total">
                                 </td>
-                                <td rowspan="2"></td>
-                                <td rowspan="2"></td>
-                                <td rowspan="2"></td>
-                                <td style="height: 10px; font-size: 10px;" align="center">Máximo=4</td>
-                                <td style="height: 10px; font-size: 10px;" align="center">RegE Maximo=68</td>
-                            </tr>
-                            <tr>
-                                <td style="height: 30px;"></td>
-                                <td style="height: 30px;"></td>
                             </tr>
                         </table>
+                    </div>
+                    <div class="col-md-8">
+                        <table style="width: 100%">
+                            <tr align="center" class="negrita">
+                                <td style="background-color: black; color:white;">Número de <br> respuesta correcta</td>
+                                <td style="background-color: black; color:white;" colspan="2">Número de <br>respuesta incorrecta </td>
+                                <td style="background-color: black; color:white;" colspan="3">Puntuación</td>
+                            </tr>
+                            <tr>
+                                <td class="noborderder noborderiz" align="center">
+                                    <input style="border: 2px solid black; width: 50px; height: 30px;" type="text" name="puntaje_total">
+                                </td>
+                                <td class="noborderder noborderiz">
+                                    <input align="right" maxlength="20" size="1" style="border: 0px;border-bottom: 2px solid black;height: 1px; height: 5px" readonly="" type="text" name="">
+                                </td>
+                                <td class="noborderder noborderiz" align="center">
+                                    <input style="border: 2px solid black; width: 50px; height: 30px;" type="text" name="puntaje_total">
+                                </td>
+                                <td class="noborderder noborderiz">
+                                    <input maxlength="20" size="1" style="border-top: 2px solid black;border-bottom: 2px solid black;border-right: 0px;border-left:0px; height: 9px" readonly="" type="text" name="">
+                                </td>
+                                <td class="noborderder noborderiz" align="center">
+                                    <input style="border: 2px solid black; width: 50px; height: 30px;" type="text" name="puntaje_total">
+                                </td>
+                                <td class="noborderder noborderiz" align="center" style="font-size: 11px;"><strong>CAa</strong><br>(Max = 64) </td>
+                            </tr>
+                            <tr>
+                                <td class="noborderder noborderiz" align="center">
+                                    <input style="border: 2px solid black; width: 50px; height: 30px;" type="text" name="puntaje_total">
+                                </td>
+                                <td class="noborderder noborderiz">
+                                    <input align="right" maxlength="20" size="1" style="border: 0px;border-bottom: 2px solid black;height: 1px; height: 5px" readonly="" type="text" name="">
+                                </td>
+                                <td class="noborderder noborderiz" align="center">
+                                    <input style="border: 2px solid black; width: 50px; height: 30px;" type="text" name="puntaje_total">
+                                </td>
+                                <td class="noborderder noborderiz">
+                                    <input maxlength="20" size="1" style="border-top: 2px solid black;border-bottom: 2px solid black;border-right: 0px;border-left:0px; height: 9px" readonly="" type="text" name="">
+                                </td>
+                                <td class="noborderder noborderiz" align="center">
+                                    <input style="border: 2px solid black; width: 50px; height: 30px;" type="text" name="puntaje_total">
+                                </td>
+                                <td class="noborderder noborderiz" align="center" style="font-size: 11px;"><strong>CAe</strong><br>(Max = 64) </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-xl-12" style="padding:2px 17px 2px 2px">
+                        <?php if (isset($vocabulario_id)) { ?>
+                              <input width="50px" type="button" class="boton btn btn-primary pull-right" id="guardar" value="Actualizar" onclick="update();">
+                         <?php }else{ ?>
+                              <input width="50px" type="button" class="boton btn btn-success pull-right" id="guardardirecto" value="Guardar" onclick="guardar();">
+                         <?php } ?>
                     </div>
                 </div>
             </div>
@@ -90,41 +121,18 @@
         <div class="col-xl-12">
             <div class="ibox">
                 <div class="row">
-                    <div class="col-md-9"> 
-                        <table style="width: 100%">
-                            <tr>
-                                <td align="center" colspan="6">Puntos de bonificación por tiempo</td>
-                            </tr>
-                            <tr>
-                                <td align="center" colspan="6" style="font-size: 12px;">Si el examinado termina un ítem nates de 45 segundos y l adiferencia es >=60, dé puntos de bonificación</td>
-                            </tr>
-                            <tr align="center">
-                                <td>Tiempo de segundos</td>
-                                <td class="noborderder">45</td>
-                                <td class="noborderiz noborderder">40-44</td>
-                                <td class=" noborderiz noborderder">35-39</td>
-                                <td class=" noborderiz noborderder">30-34</td>
-                                <td class=" noborderiz">0-29</td>
-                            </tr>
-                            <tr align="center">
-                                <td>Puntos de bonificación</td>
-                                <td class="noborderder">0</td>
-                                <td class="noborderiz noborderder">1</td>
-                                <td class=" noborderiz noborderder">2</td>
-                                <td class=" noborderiz noborderder">3</td>
-                                <td class=" noborderiz">4</td>
-                            </tr>
-                        </table>
+                    <div class="col-md-8">
+                        <p style="font-size: 12px">** Las respuestas que requieren</p>
                     </div>
-                    <div class="col-md-2" align="right">
-                        <p><strong>Puntaje directo <br> total</strong><br>
-                        (Máximo = 136)</p>
+                    <div class="col-md-3" align="right">
+                        <p><strong>Puntaje directa Información</strong><br>
+                        (Máximo = 31)</p>
 
                     </div>
                     <div class="col-md-1">
                         <table>
                             <tr>
-                                <input style="border: 2px solid black;" type="text" name="">
+                                <input style="border: 2px solid black;" type="text" name="puntaje_total">
                             </tr>
                         </table>
                     </div>
@@ -133,3 +141,6 @@
         </div>
     </div>
 </div>
+<script>
+    var vocabulario_id = <?php  if (isset($vocabulario_id)) { echo $vocabulario_id;} else { echo 0; } ?>;
+</script>

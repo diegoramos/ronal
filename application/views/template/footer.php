@@ -1,4 +1,3 @@
-
 </div>
    </div>
     <!-- BEGIN THEME CONFIG PANEL-->
@@ -102,7 +101,7 @@
                         <div class="color bg-green"></div>
                         <div class="color-small bg-silver-100"></div>
                     </label>
-                </div>
+                </div> 
                 <div class="color-skin-box" data-toggle="tooltip" data-original-title="Purple light">
                     <label>
                         <input type="radio" name="setting-theme" value="purple-light">
@@ -125,7 +124,7 @@
                         <span class="color-check-icon"><i class="fa fa-check"></i></span>
                         <div class="color bg-pink"></div>
                         <div class="color-small bg-silver-100"></div>
-                    </label>
+                    </label>  
                 </div>
             </div>
         </div>
@@ -146,20 +145,59 @@
     <!-- PAGE LEVEL PLUGINS-->
     <!-- CORE SCRIPTS-->
     <script src="<?=base_url()?>assets/js/app.min.js" type="text/javascript"></script>
-    <!-- PAGE LEVEL SCRIPTS-->
-    <script src="<?=base_url()?>assets/js/cubos.js" type="text/javascript"></script>
-    <script src="<?=base_url()?>assets/js/analogias.js" type="text/javascript"></script>
-    <script src="<?=base_url()?>assets/js/retdigitos.js" type="text/javascript"></script>
-    <script src="<?=base_url()?>assets/js/razfiguras.js" type="text/javascript"></script>
-    <script src="<?=base_url()?>assets/js/claves.js" type="text/javascript"></script>
-    <script src="<?=base_url()?>assets/js/serienumletras.js" type="text/javascript"></script>
-    <script src="<?=base_url()?>assets/js/matrices.js" type="text/javascript"></script>
-    <script src="<?=base_url()?>assets/js/comprension.js" type="text/javascript"></script>
-    <script src="<?=base_url()?>assets/js/completfiguras.js" type="text/javascript"></script>
-    <script src="<?=base_url()?>assets/js/registros.js" type="text/javascript"></script>
-    <script src="<?=base_url()?>assets/js/vocabulario.js" type="text/javascript"></script>
-    <script src="<?=base_url()?>assets/js/informacion.js" type="text/javascript"></script>
-    <script src="<?=base_url()?>assets/js/inferencias.js" type="text/javascript"></script>
-    <script src="<?=base_url()?>assets/js/aritmetica.js" type="text/javascript"></script>
+    <!-- PAGE LEVEL SCRIPTS--> 
+    <script> 
+        var base_url = '<?=base_url()?>';
+    </script>
+    <?php if ($this->uri->segment(1)=='cubos') {  ?>
+        <script src="<?=base_url()?>assets/js/cubos.js" type="text/javascript"></script>
+    <?php } ?>
+    <?php if ($this->uri->segment(1)=='analogias') {  ?>
+        <script src="<?=base_url()?>assets/js/analogias.js" type="text/javascript"></script>
+    <?php } ?>
+    <?php if ($this->uri->segment(1)=='retDigitos') {  ?>
+        <script src="<?=base_url()?>assets/js/retdigitos.js" type="text/javascript"></script>
+    <?php } ?>
+    <?php if ($this->uri->segment(1)=='razFiguras') {  ?>
+        <script src="<?=base_url()?>assets/js/razfiguras.js" type="text/javascript"></script>
+    <?php } ?>
+    <?php if ($this->uri->segment(1)=='claves') {  ?>
+        <script src="<?=base_url()?>assets/js/claves.js" type="text/javascript"></script>
+    <?php } ?>
+    <?php if ($this->uri->segment(1)=='vocabulario') {  ?>
+        <script src="<?=base_url()?>assets/js/vocabulario.js" type="text/javascript"></script>
+    <?php } ?>
+    <?php if ($this->uri->segment(1)=='serieNumLetras') {  ?>
+        <script src="<?=base_url()?>assets/js/serienumletras.js" type="text/javascript"></script>
+    <?php } ?>
+    <?php if ($this->uri->segment(1)=='matrices') {  ?>
+        <script src="<?=base_url()?>assets/js/matrices.js" type="text/javascript"></script>
+    <?php } ?>
+    <?php if ($this->uri->segment(1)=='comprension') {  ?>
+        <script src="<?=base_url()?>assets/js/comprension.js" type="text/javascript"></script>
+    <?php } ?>
+    <?php if ($this->uri->segment(1)=='busqsimbolos') {  ?>
+        <script src="<?=base_url()?>assets/js/busqsimbolos.js" type="text/javascript"></script>
+    <?php } ?>
+    <?php if ($this->uri->segment(1)=='completfiguras') {  ?>
+        <script src="<?=base_url()?>assets/js/completfiguras.js" type="text/javascript"></script>
+    <?php } ?>
+    <?php if ($this->uri->segment(1)=='registros') {  ?>
+        <script src="<?=base_url()?>assets/js/registros.js" type="text/javascript"></script>
+    <?php } ?>
+    <?php if ($this->uri->segment(1)=='informacion') {  ?>
+        <script src="<?=base_url()?>assets/js/informacion.js" type="text/javascript"></script>
+    <?php } ?>
+    <?php if ($this->uri->segment(1)=='aritmetica') {  ?>
+        <script src="<?=base_url()?>assets/js/aritmetica.js" type="text/javascript"></script>
+    <?php } ?>
+    <?php if ($this->uri->segment(1)=='inferencias') {  ?>
+        <script src="<?=base_url()?>assets/js/inferencias.js" type="text/javascript"></script>
+    <?php } ?>
+    <?php if ($this->uri->segment(1)=='paganalisis') {  ?>
+        <script src="<?=base_url()?>assets/js/paganalisis.js" type="text/javascript"></script>
+    <?php } ?>
+    
+    
 </body>
 </html>

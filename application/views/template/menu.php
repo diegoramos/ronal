@@ -9,7 +9,7 @@
                 </div>
                 <ul class="side-menu metismenu">
                     <li>
-                        <a href="index.html"><i class="sidebar-item-icon fa fa-th-large"></i>
+                        <a href="<?php echo base_url()  ?>"><i class="sidebar-item-icon fa fa-th-large"></i>
                             <span class="nav-label">Dashboard</span>
                         </a>
                     </li>
@@ -22,13 +22,13 @@
                                 <a href="<?=base_url()?>cubos">Construccion con cubos</a>
                             </li>
                             <li>
-                                <a href="<?=base_url()?>analogias">Analogías</a>
+                                <a href="<?=base_url()?>analogias">Semejanza</a>
                             </li>
                             <li>
-                                <a href="<?=base_url()?>retDigitos">Retención de Dígitos</a>
+                                <a href="<?=base_url()?>matrices">Matrices</a>
                             </li>
                             <li>
-                                <a href="<?=base_url()?>razFiguras">Razonamiento con figuras</a>
+                                <a href="<?=base_url()?>retDigitos">Dígitos</a>
                             </li>
                             <li>
                                 <a href="<?=base_url()?>claves">Claves</a>
@@ -37,54 +37,52 @@
                                 <a href="<?=base_url()?>vocabulario">Vocabulario</a>
                             </li>
                             <li>
-                                <a href="<?=base_url()?>serieNumLetras">Serie de números y letras</a>
+                                <a href="<?=base_url()?>razFiguras">Balanzas</a>
                             </li>
                             <li>
-                                <a href="<?=base_url()?>matrices">Matrices</a>
+                                <a href="<?=base_url()?>informacion">Puzles visuales</a>
                             </li>
                             <li>
-                                <a href="<?=base_url()?>comprension">Comprensión</a>
+                                <a href="<?=base_url()?>serieNumLetras">Span de dibujos</a>
                             </li>
                             <li>
                                 <a href="<?=base_url()?>busqSimbolos">Búsqueda de Símbolos </a>
                             </li>
                             <li>
-                                <a href="<?=base_url()?>completFiguras">Completamiento de figuras</a>
+                                <a href="<?=base_url()?>comprension">Información</a>
                             </li>
                             <li>
-                                <a href="<?=base_url()?>registros">Registros</a>
+                                <a href="<?=base_url()?>completFiguras">Letras y números</a>
                             </li>
                             <li>
-                                <a href="<?=base_url()?>informacion">Informacion</a>
+                                <a href="<?=base_url()?>registros">Cancelación</a>
+                            </li>
+                            <li>
+                                <a href="<?=base_url()?>inferencias">Comprensión</a>
                             </li>
                             <li>
                                 <a href="<?=base_url()?>aritmetica">Aritmética</a>
-                            </li>
-                            <li>
-                                <a href="<?=base_url()?>inferencias">Inferencias</a>
-                            </li>
-                            <li>
-                                <a href="<?=base_url()?>pagAnalisis">Página de análisis</a>
                             </li>
                         </ul>
                     </li>
                     <li>
                         <a href="javascript:;"><i class="sidebar-item-icon fa fa-bookmark"></i>
-                            <span class="nav-label">Búsqueda de Símbolos</span><i class="fa fa-angle-left arrow"></i></a>
+                            <span class="nav-label">Analisis</span><i class="fa fa-angle-left arrow"></i></a>
                         <ul class="nav-2-level collapse">
                             <li>
-                                <a href="<?=base_url()?>partea">Parte A</a>
+                                <a href="<?=base_url()?>partea">Observaciones conductuales</a>
                             </li>
                             <li>
-                                <a href="<?=base_url()?>parteb">Parte B</a>
+                                <a href="<?=base_url()?>parteb">Aanalisis primario</a>
                             </li>
                             <li>
-                                <a href="<?=base_url()?>clavea">Claves A</a>
-                            </li>
-                            <li>
-                                <a href="<?=base_url()?>claveb">Claves B</a>
+                                <a href="<?=base_url()?>clavea">Analisis secundario</a>
                             </li>
                         </ul>
+                    </li>
+                    <li>
+                        <a href="<?=base_url()?>claveb"><i class="sidebar-item-icon fa fa-bookmark"></i>
+                            <span class="nav-label">Resultado</span></a>
                     </li>
                 </ul>
             </div>
